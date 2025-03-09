@@ -1,4 +1,4 @@
-# Two-Tier-Java-Client-Server-Application-with-MySQL-and-JDBC
+# Java-Client-Server-App-with-MySQL-and-JDBC
 
 **Overview**
 
