@@ -4,8 +4,8 @@
 
 This project is a two-tier Java-based client-server application that interacts with a MySQL database using JDBC for connectivity. It consists of two applications:
 
-**General Client Application – Allows users with varying permissions to execute SQL queries (DDL & DML) against a MySQL database.  
-**Specialized Accountant Application – Provides a restricted view-only interface to monitor SQL transaction logs.  
+* General Client Application – Allows users with varying permissions to execute SQL queries (DDL & DML) against a MySQL database.  
+* Specialized Accountant Application – Provides a restricted view-only interface to monitor SQL transaction logs.  
 
 **Key Features**
 
@@ -22,36 +22,35 @@ This project is a two-tier Java-based client-server application that interacts w
 
 1. To run this project, execute the following SQL scripts in MySQL Workbench or command line:
 
-* bikedb.sql - Creates and populates the bikedb database.  
-* project3dbscript.sql – Creates and populates the project3 database.  
-* project3operationslog.sql – Sets up the operationslog database for tracking user transactions.  
-* clientCreationScriptProject3.sql – Creates client users (client1, client2, project3app, theaccountant).  
-* clientPermissionsScriptProject3.sql – Assigns necessary permissions to each user.
+   * bikedb.sql - Creates and populates the bikedb database.  
+   * project3dbscript.sql – Creates and populates the project3 database.  
+   * project3operationslog.sql – Sets up the operationslog database for tracking user transactions.  
+   * clientCreationScriptProject3.sql – Creates client users (client1, client2, project3app, theaccountant).  
+   * clientPermissionsScriptProject3.sql – Assigns necessary permissions to each user.
 
-Ensure MySQL is running and set up with the required databases and users.
+   Ensure MySQL is running and set up with the required databases and users.
 
-*Users & Permissions*
+   **Users & Permissions**
 
-* User	Database	Permissions  
-* root	project3, bikedb	Full Access  
-* client1	project3, bikedb	SELECT  
-* client2	project3, bikedb	SELECT, UPDATE  
-* project3app	operationslog	SELECT, INSERT, UPDATE  
-* theaccountant	operationslog	SELECT  
+   * root	project3, bikedb	Full Access  
+   * client1	project3, bikedb	SELECT  
+   * client2	project3, bikedb	SELECT, UPDATE  
+   * project3app	operationslog	SELECT, INSERT, UPDATE  
+   * theaccountant	operationslog	SELECT  
 
 2. Compile & Run Java Files
 
-Update the properties files with correct database connection details!  
+   Update the properties files with correct database connection details!  
 
-Use the following commands to compile files:  
+   Use the following commands to compile files:  
 
-* javac SQLClientApplicationFall2024.java  
-* javac SQLAccountantApplicationFall2024.java  
-* Javac ResultSetTableModel.java  
+   * javac SQLClientApplicationFall2024.java  
+   * javac SQLAccountantApplicationFall2024.java  
+   * Javac ResultSetTableModel.java  
 
-Use the following commands to run the files:  
+   Use the following commands to run the files:  
 
-* java SQLClientApplicationFall2024  
-* java SQLAccountantApplicationFall2024  
+   * java SQLClientApplicationFall2024  
+   * java SQLAccountantApplicationFall2024  
 
 3. Use the GUI to enter credentials, execute SQL commands, and view transaction logs.
