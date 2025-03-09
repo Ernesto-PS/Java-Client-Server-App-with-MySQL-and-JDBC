@@ -20,9 +20,9 @@ This project is a two-tier Java-based client-server application that interacts w
 
 **How to Run**
 
-1. To run this project, execute the following SQL scripts in MySQL Workbench or command line:
+1. To run this project, execute and run the following SQL scripts in MySQL Workbench or command line:
 
-   * bikedb.sql - Creates and populates the bikedb database.  
+   * bikedb.sql - Creates and populates the bike database.  
    * project3dbscript.sql – Creates and populates the project3 database.  
    * project3operationslog.sql – Sets up the operationslog database for tracking user transactions.  
    * clientCreationScriptProject3.sql – Creates client users (client1, client2, project3app, theaccountant).  
@@ -38,9 +38,18 @@ This project is a two-tier Java-based client-server application that interacts w
    * project3app	operationslog	SELECT, INSERT, UPDATE  
    * theaccountant	operationslog	SELECT  
 
-2. Compile & Run Java Files
+2. Configure the Properties Files
 
-   Update the properties files with correct database connection details!  
+   Update the properties files with the correct database connection details:
+
+   * bikedb.properties: Configuration settings for the bike database.  
+   * client1.properties & client2.properties: Configuration settings specific to client modules.  
+   * operationslog.properties: Configuration settings for logging operations.  
+   * project3.properties & project3app.properties: General configuration settings for the project.  
+   * root.properties: Contains the root configuration settings for the project.  
+   * theaccountant.properties: Configuration settings for the accountant module.  
+
+3. Compile & Run Java Files
 
    Use the following commands to compile files:  
 
@@ -53,4 +62,4 @@ This project is a two-tier Java-based client-server application that interacts w
    * java SQLClientApplicationFall2024  
    * java SQLAccountantApplicationFall2024  
 
-3. Use the GUI to enter credentials, execute SQL commands, and view transaction logs.
+4. Use the GUI to enter credentials, execute SQL commands, and view transaction logs.
